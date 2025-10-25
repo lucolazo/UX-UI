@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap');
 
+/* ----- Styles generales ----- */
+
 body {
    font-family: 'Roboto Mono', monospace;
    margin: 0;
@@ -12,20 +14,6 @@ a {
    display: inline;
    color: black;
 }
-
-.home-body {
-   position: fixed;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-}
-
-.grid-container {
-   max-width: 980px;
-   margin: auto;
-}
-
 
 header {
    width: 100%;
@@ -54,6 +42,34 @@ header .header-icons-container .icons {
 
 header .icons span {
    color: white;
+}
+
+footer {
+   width: 100%;
+   height: 80px;
+   background-color: #22272d;
+   border-top: 35px solid #47cfac;
+   text-align: center;
+}
+
+footer p {
+   color: white;
+   margin-top: 30px;
+}
+
+/* ----- Home page styles ----- */
+
+.home-body {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
+
+.grid-container {
+   max-width: 980px;
+   margin: auto;
 }
 
 nav {
@@ -121,6 +137,8 @@ nav .profile-link a {
    line-height: 50px;
 }
 
+/* ----- Blog page styles ----- */
+
 .blogs-main {
    display: grid;
 }
@@ -183,15 +201,38 @@ nav .profile-link a {
    width: 100%;
 }
 
-footer {
-   width: 100%;
-   height: 80px;
-   background-color: #22272d;
-   border-top: 35px solid #47cfac;
-   text-align: center;
+/* ----- Profile page styles ----- */
+.profile-main {
+   display: grid;
 }
 
-footer p {
-   color: white;
-   margin-top: 30px;
+.profile-main-new {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 2fr;
+}
+
+.profile-news-container {
+   background-color: #e6e9ed;
+   padding: 50px 50px 40px;
+}
+
+.profile-news-img-container {
+   grid-column: 1;
+}
+
+.profile-news-img-container img {
+   width: 85%;
+}
+
+.profile-news-info-container {
+   grid-column: 2;
+}
+
+.profile-news-info-container p {
+   margin-bottom: 35px;
+}
+
+.profile-posts-container {
+   padding: 0 50px 40px;
 }
