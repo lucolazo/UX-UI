@@ -57,6 +57,7 @@ footer p {
    margin-top: 30px;
 }
 
+
 /* ----- Home page styles ----- */
 
 .home-body {
@@ -137,6 +138,7 @@ nav .profile-link a {
    line-height: 50px;
 }
 
+
 /* ----- Blog page styles ----- */
 
 .blogs-main {
@@ -201,7 +203,9 @@ nav .profile-link a {
    width: 100%;
 }
 
+
 /* ----- Profile page styles ----- */
+
 .profile-main {
    display: grid;
 }
@@ -214,7 +218,7 @@ nav .profile-link a {
 
 .profile-news-container {
    background-color: #e6e9ed;
-   padding: 50px 50px 40px;
+   padding: 50px 60px 40px;
 }
 
 .profile-news-img-container {
@@ -235,4 +239,30 @@ nav .profile-link a {
 
 .profile-posts-container {
    padding: 0 50px 40px;
+}
+
+
+/* Detalles blog page styles */
+.details-main {
+   display: grid;
+}
+
+.details-main-img-container {
+   grid-row: 1;
+   width: 100%;
+   max-width: 1250px;
+   justify-self: center;
+}
+
+.details-main-img-container img {
+   width: 100%;
+   /* la imagen se adapta al contenedor */
+   display: block;
+}
+
+.details-main-new {
+   grid-row: 2;
+   grid-template-rows: 1fr 1fr 1fr;
+   padding: 0 150px;
+   text-align: justify;
 }
