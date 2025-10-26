@@ -242,7 +242,8 @@ nav .profile-link a {
 }
 
 
-/* Detalles blog page styles */
+/* ----- Details blog page styles ----- */
+
 .details-main {
    display: grid;
 }
@@ -256,7 +257,6 @@ nav .profile-link a {
 
 .details-main-img-container img {
    width: 100%;
-   /* la imagen se adapta al contenedor */
    display: block;
 }
 
@@ -265,4 +265,47 @@ nav .profile-link a {
    grid-template-rows: 1fr 1fr 1fr;
    padding: 0 150px;
    text-align: justify;
+   padding-bottom: 50px;
+}
+
+.details-main-new h3 {
+   border-bottom: 1px solid #cdd2da;
+   padding-bottom: 20px;
+   padding-top: 20px;
+}
+
+.profile-info-container-new {
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+.profile-info-container-img {
+   flex: 1;
+   padding: 20px;
+}
+
+.sub-columnas {
+   display: flex;
+   gap: 10px;
+   padding-left: 100px;
+}
+
+.profile-info-container-img img {
+   width: 100px;
+}
+
+.profile-info-container-img h4 {
+   text-decoration: underline;
+   text-underline-offset: 7px;
+}
+
+.sub-filas {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+}
+
+.sub-filas p {
+   margin: 0;
 }
